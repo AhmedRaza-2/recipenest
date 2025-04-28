@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #ff6b6b;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.chef-list, .chef-profile, .dashboard, .login, .recipe-portfolio {
+  padding: 2rem;
+}
+
+.chef-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.chef-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 200px;
+}
+
+.recipe-card {
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}

@@ -1,0 +1,76 @@
+/* Styling for the Signup Page */
+.signup {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup h2 {
+    text-align: center;
+    color: #ff7043;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .signup .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .signup .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .signup .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .signup .form-group input:focus {
+    border-color: #ff7043;
+    outline: none;
+  }
+  
+  .signup .error {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .signup button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7043;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signup button:hover {
+    background-color: #f4511e;
+  }
+  
+  .signup p {
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
+  .signup p a {
+    color: #ff7043;
+    text-decoration: none;
+  }
+  
+  .signup p a:hover {
+    text-decoration: underline;
+  }
+  

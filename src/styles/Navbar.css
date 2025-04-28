@@ -1,0 +1,68 @@
+/* General Navbar Styles */
+.navbar {
+    background-color: #ff7043; /* Warm, inviting color */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .navbar:hover {
+    background-color: #e65100; /* Darker shade on hover */
+  }
+  
+  /* Navbar Links */
+  .navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale transitions */
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+    color: #ffb74d; /* Lighter color on hover for contrast */
+    transform: scale(1.05); /* Slight scale effect */
+  }
+  
+  /* Navbar Button */
+  .navbar button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar button:hover {
+    background-color: white;
+    color: #ff7043; /* Inverse color effect on hover */
+    transform: scale(1.05); /* Slight scale effect */
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+    
+    .navbar a {
+      margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
+  
+    .navbar button {
+      width: 100%; /* Make button full width on small screens */
+      margin-top: 10px;
+    }
+  }
+  

@@ -1,0 +1,103 @@
+/* Recipe Portfolio Container */
+.recipe-portfolio {
+  padding: 40px;
+  background-color: #fff; /* Clean background for contrast */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid layout */
+  gap: 20px;
+}
+
+/* Individual Recipe Card Styling */
+.recipe-card {
+  background: #f7f7f7; /* Light background for cards */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease; /* Smooth transitions */
+  overflow: hidden;
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px); /* Slightly more lifted effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Intense shadow on hover */
+  background-color: #fafafa; /* Subtle background color change */
+}
+
+/* Recipe Card Title Styling */
+.recipe-card h3 {
+  color: #ff5722; /* Warm orange color for titles */
+  margin-bottom: 10px;
+  font-size: 24px; /* Slightly larger font size */
+  font-weight: 600;
+  text-transform: uppercase; /* Adds a more structured, bold appearance */
+  letter-spacing: 1px; /* Small space between letters for clarity */
+  transition: color 0.3s ease-in-out; /* Smooth color change */
+}
+
+.recipe-card:hover h3 {
+  color: #e65100; /* Darken the title on hover for effect */
+}
+
+/* Recipe Card Button Styling */
+.recipe-card button {
+  margin-top: 10px;
+  background-color: #ff7043; /* Warm color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: inline-block;
+  margin-left: auto; /* Center button */
+  margin-right: auto;
+}
+
+.recipe-card button:hover {
+  background-color: #e65100; /* Darker shade for hover effect */
+  transform: scale(1.1); /* Increase scale for a bolder effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+}
+
+/* Hover Animation for Cards */
+@keyframes cardHoverEffect {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+.recipe-card:hover {
+  animation: cardHoverEffect 0.6s ease-in-out;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .recipe-portfolio {
+    grid-template-columns: 1fr; /* Single column layout on mobile */
+    padding: 20px;
+  }
+}
+.recipe-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px; /* You can adjust the size as needed */
+  margin: 10px 0;
+}

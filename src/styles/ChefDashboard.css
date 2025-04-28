@@ -1,0 +1,113 @@
+/* Dashboard container */
+.dashboard {
+  padding: 50px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fc;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.dashboard h2 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Form Styling */
+.dashboard form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard form:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Input and Textarea Styling */
+.dashboard input,
+.dashboard textarea {
+  width: 100%;
+  padding: 16px;
+  margin-top: 14px;
+  margin-bottom: 24px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect */
+.dashboard input:focus,
+.dashboard textarea:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 10px rgba(33, 150, 243, 0.3);
+  background-color: #fff;
+}
+
+/* Button Styling */
+.dashboard button {
+  background-color: #ff7043;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect on buttons */
+.dashboard button:hover {
+  background-color: #e65100;
+  transform: translateY(-3px);
+}
+
+/* List styling */
+.dashboard ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on list items */
+.dashboard ul li:hover {
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button inside list items */
+.dashboard ul li button {
+  background: #ff7043;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect on list item buttons */
+.dashboard ul li button:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+}
